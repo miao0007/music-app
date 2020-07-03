@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Quiz</title>
+
+    <!-- Link for google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+    <!-- custom styling sheet -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+
+<body>
+    <!-- Start of Heading where App title and todays date is displayed -->
+    <main class="grid-container">
+        <!-- Start of heading part which shows text and timer -->
+        <header class="grid-x hide" id="header">
+            <!-- title -->
+            <h2 class="cell small-6" id="appTitle">App title</h2>
+            <!-- date -->
+            <h2 class="cell small-6" id="currentDay">App Subtitle</h2>
+        </header>
+
+        <!-- Initial playButton to start game  which gets hidden after clicked-->
+        <section class="grid-x align-center-middle" id="initialPage">
+            <!-- title image -->
+            <img id="title-img" src="./Assets/img/musicImg.jpg" alt="4 people listening to ipod">
+            <!-- description text -->
+            <p class="cell text-center" id="description">Your choice of music begins with start button</p>
+            <!-- start button -->
+            <button type="button" class="button rounded large" id="startButton">Start</button>
+        </section>
+
+        <!-- Start of Panel for series of questions all the questions and options will be dynamically appended here -->
+        <section class="Panel callout radius hide">
+            <!-- quiz form -->
+            <form class="inputForm"></form>
+        </section>
+
+        <!-- Start of iframe where youtube video will get appended -->
+        <div class="end-screen hide grid-x align-center-middle">
+            <p>According to your answers to the questions, we think you should listen to:
+                <br>
+                <span id="final-artist-song"></span>
+            </p>
+        </div>
+        <div class="end-screen flex-video hide grid-x align-center-middle">
+            <!-- youtube video -->
+            <iframe src=""></iframe>
+        </div>
+
+
+
+
+    </main>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- custom musix-api-script.js -->
+    <script src="./Assets/js/musix-api-script.js"></script>
+    <!-- custom main script.js -->
+    <script src="./Assets/js/script.js"></script>
+    <!-- custom youtube-api-script.js -->
+    <script src="./Assets/js/youtube-api-script.js"></script>
+
+
+</body>
+
+</html>
