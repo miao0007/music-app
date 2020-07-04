@@ -2,8 +2,8 @@
 
 We have created a music application that plays a song based upon responses to questions.
 
-## Basic Overview - [Live Demo] https://miao0007.github.io/music-app/
-
+## Deployed App Website: https://miao0007.github.io/music-app/
+## Group Presentation Slides - https://docs.google.com/presentation/d/12i0fUg68PT-z2POf7bZ9HVU2VCS9QeLBf34SYKeboHM/edit?usp=sharing
 ## user story
 
 As a music lover and someone who enjoys playing games, I want to play a game to help me find a song to listen to, so I can have fun and be inspired to listen to new music.
